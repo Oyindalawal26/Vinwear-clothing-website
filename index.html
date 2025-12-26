@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinwear website</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: rgb(246, 246, 235);
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        .home1{
+            background-color: rgb(220, 109, 58);
+            padding: 1px;
+        }
+        .both{
+            display: flex;
+            gap: 460px;
+            justify-content: center;
+            align-items: center;
+        }
+        .vin{
+            display: flex;
+            gap: 1px;
+            align-items: center;
+        }
+        .wear{
+            width: 50px;
+            height: 50px;
+        }
+         h1{
+            text-align: center;
+            align-items: center;
+            color:black;
+        }
+        .navbar{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar a{
+            background-color: rgb(149, 77, 44);
+            color: white;
+            padding: 5px 5px;
+            border-radius: 6px;
+            border: 3px solid rgb(80, 44, 2);
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .navbar a:hover{
+            background-color: rgb(113, 61, 37);
+            color: white;
+        }
+        .jeans{
+            width: 1000px;
+            height:600px;
+            display: block;
+            margin: 0 auto;
+            border: 3px solid rgb(113, 61, 2);
+            border-radius: 12px;
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        .view{
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+    button, .navbar a {
+    padding: 12px 24px;
+    border-radius: 30px; /* Pill shape – trendy for fashion */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.shop, .order { background: rgb(220, 109, 58); border: none; justify-content: center;}
+.shop:hover, .order:hover { background: rgb(180, 80, 30); transform: translateY(-3px); }
+.collections { background: white; color: rgb(220, 109, 58); border: 2px solid rgb(220, 109, 58); }
+.collections:hover { background: rgb(220, 109, 58); color: white; }
+        .vinwear{
+            display: block;
+            margin: 0 auto;
+            width: 50px;
+            height: 50px;
+            color:black;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .second h3{
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .home2{
+            background-color: rgb(24, 24, 24);
+            color: white;
+            padding: 1px;
+        }
+        .home2 h3{
+            color: white;
+        }
+        .home2 h1{
+            color: rgb(220, 109, 58);
+        }
+        .redefine{
+            color: rgb(0, 0, 0);
+            text-align: center;
+             margin-bottom: 40px;
+        }
+        .culture{
+            display: flex;
+            gap: 350px;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+        .woman{
+            width: 400px;
+            height: 300px;
+            border-radius: 12px;
+            border: 3px solid rgb(113, 61, 2);
+        }
+        .street{
+            margin-left: 30px;
+        }
+        .brand{
+            text-align: center;
+            color:black;
+            margin-top: 20px;
+        }
+        .singlet{
+            display: flex;
+            margin: 0 auto;
+            border: 3px solid rgb(113, 61, 2);
+            margin-top: 20px;
+            gap: 200px; 
+            width: 800px;
+            height: 200px;
+            border-radius: 12px;
+        }
+        .leg, .blouse, .jogger, .baggy, .tee, .lets{
+            border: 2px solid rgb(113, 61, 2);
+        }
+        .all{
+            justify-content: center;
+            align-items: center;
+        }
+        table {
+    width: 90%; /* Fits better on screen */
+    margin: 50px auto; /* Centers it nicely */
+    border-collapse: collapse; /* Cleaner lines */
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden; /* Rounded corners work */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgb(220, 109, 58);
+}
+thead td{
+    color: white;
+}
+td{
+    color: black;
+}
+thead {
+    background-color: rgb(220, 109, 58);
+    color: white;
+    font-size: 1.2em;
+}
+
+tbody tr:hover {
+    background-color: rgb(246, 246, 235); /* Highlight on hover */
+}
+
+.one {
+    width: 200px; /* Smaller images in table */
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgb(113, 61, 2);
+}
+
+/* Simple mobile fix - stack on small screens */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr { display: none; }
+    tr { margin-bottom: 20px; }
+    td { border: none; border-bottom: 1px solid rgb(220, 109, 58); position: relative; padding-left: 50%; }
+    td:before { content: attr(data-label); position: absolute; left: 10px; width: 45%; font-weight: bold; }
+}
+        footer{
+            background-color:  rgb(220, 109, 58);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer h1{
+            color:  rgb(0, 0, 0);
+        }
+        
+        * { box-sizing: border-box; }
+    img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <section class="home1">
+        <div class="both">
+            <div class="vin">
+                <img src="Irvin watermark.png" alt="" class="wear">
+                <h1 class="fashion">VINWEAR</h1>
+            </div> 
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#collection">Collections</a>
+                <a href="#contact">Contacts</a>
+            </nav>
+        </div>
+    </section>
+    <section id="home" class="hero">
+        <img src="jeans.jpg" alt="denim jeans image" class="jeans">
+        <div class="view">
+            <button class="shop">Shop now</button>
+            <button class="collections">View collections</button>
+        </div>
+    </section>
+    <section id="about" class="second">
+    <img src="Irvin watermark.png" alt="Vinwear logo" class="vinwear">
+    <h3>Vinwear...Redefine Your Style</h3>
+        <div class="culture">
+            <div class="street">
+                <h1 class="brand">ABOUT VINWEAR</h1>
+                <p>Vinwear is Nigerian street brand</p>
+                <p>inspired by confidence, comfort and culture.</p>
+                <p>Every piece is made to stand out effortlessly</p><br>
+                <a href="#">Learn more</a>
+            </div>
+            <img src="top.jpg" alt="woman clothes" class="woman">
+        </div>
+    </section>
+
+    <section id="collection" class="home2">
+    <img src="Irvin watermark.png" alt="Vinwear logo" class="vinwear">
+    <h3 class="redefine">Vinwear...Redefine Your Style</h3>
+    <h1>OUR COLLECTIONS</h1>
+    <div>
+        <marquee behavior="" direction="ltr" class="singlet">
+            <img src="trouser.jpg" alt="trouser image" class="leg">
+            <img src="singlets.jpg" alt="singlet vest" class="lets">
+            <img src="t shirt.jpg" alt="T shirt" class="tee">
+            <img src="baggy.jpg" alt="" class="baggy">
+            <img src="cloth.jpg" alt="" class="blouse">
+            <img src="jogger.jpg" alt="" class="jogger">
+        </marquee>
+    </div>
+    <div class="all">
+    <button class="order">ORDER ALL</button>
+    </div>
+    <h1>OUR PRICETAGS</h1>
+    <table border="1">
+        <thead>
+            <td>Our Clothes</td>
+            <td>Images</td>
+            <td>Price</td>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td data-label="Our Clothes">Burberry Denim Jeans</td>
+                <td data-label="Images"><img src="BURBERRY Blue Straight Fit Horseferry Print Japanese Denim Jeans.jpg" alt="jeans image" class="one"></td>
+                <td data-label="Price">150USD</td>
+            </tr>
+            <tr>
+                <td>Adidas Cargo Pants</td>
+                <td><img src="Adidas Originals Junior Unisex Woven Cargo Tracksuit Pants - Black.jpg" alt="cargo pants image" class="one"></td>
+                <td>200USD</td>
+            </tr>
+            <tr>
+                <td>Armani Polo shirt</td>
+                <td><img src="armani.jpg" alt="polo shirt image" class="one"></td>
+                <td>100USD</td>
+            </tr>
+            <tr>
+                <td>Chanel Bodycon dress</td>
+                <td><img src="chanel.jpg" alt="bodycon image" class="one"></td>
+                <td>180USD</td>
+            </tr>
+            <tr>
+                <td>Nike Oversized tee</td>
+                <td><img src="Nike - T-shirt in zwart met logo met dierenprint op de achterkant.jpg" alt="tee image" class="one"></td>
+                <td>200USD</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    <section id="contact">
+        <footer>
+    <h1 style="text-align: center; color: rgb(0, 0, 0);">CONTACT US</h1>
+    <form style="max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+        <input type="text" placeholder="Your Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid rgb(113, 61, 2); border-radius: 8px;"><br>
+        <input type="email" placeholder="Your Email" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid rgb(113, 61, 2); border-radius: 8px;"><br>
+        <textarea placeholder="Your Message" required rows="5" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid rgb(113, 61, 2); border-radius: 8px;"></textarea><br>
+        <button type="submit" class="order" style="width: 100%;">Send Message</button>
+    </form>
+    <p>All Rights reserved | @ 2025 Vinwear</p>
+    </section>
+        </footer>
+    </section>
+</body>
+</html>
