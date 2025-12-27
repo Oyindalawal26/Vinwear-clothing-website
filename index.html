@@ -58,9 +58,15 @@
             background-color: rgb(113, 61, 37);
             color: white;
         }
+        .add{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
         .jeans{
-            width: 1000px;
-            height:600px;
+            width: 600px;
+            height:500px;
             display: block;
             margin: 0 auto;
             border: 3px solid rgb(113, 61, 2);
@@ -81,8 +87,32 @@
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-.shop, .order { background: rgb(220, 109, 58); border: none; justify-content: center;}
-.shop:hover, .order:hover { background: rgb(180, 80, 30); transform: translateY(-3px); }
+.order-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.order {
+    background: rgb(220, 109, 58);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.order:hover {
+    background: rgb(180, 80, 30);
+    transform: translateY(-3px);
+}
+
+.shop { background: rgb(220, 109, 58); border: none; justify-content: center;}
+.shop:hover{ background: rgb(180, 80, 30); transform: translateY(-3px); }
 .collections { background: white; color: rgb(220, 109, 58); border: 2px solid rgb(220, 109, 58); }
 .collections:hover { background: rgb(220, 109, 58); color: white; }
         .vinwear{
@@ -187,6 +217,7 @@ tbody tr:hover {
 .one {
     width: 200px; /* Smaller images in table */
     height: auto;
+    object-fit: cover;
     border-radius: 8px;
     border: 2px solid rgb(113, 61, 2);
 }
@@ -205,7 +236,7 @@ tbody tr:hover {
             background-color:  rgb(220, 109, 58);
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
         }
         footer h1{
             color:  rgb(0, 0, 0);
@@ -230,13 +261,16 @@ tbody tr:hover {
             </nav>
         </div>
     </section>
+
     <section id="home" class="hero">
-        <img src="jeans.jpg" alt="denim jeans image" class="jeans">
+        <div class="add">
+            <img src="jeans.jpg" alt="denim jeans image" class="jeans">
+            <p>Graphic Denim Jeans</p>
         <div class="view">
             <button class="shop">Shop now</button>
             <button class="collections">View collections</button>
         </div>
-    </section>
+        </div>
     <section id="about" class="second">
     <img src="Irvin watermark.png" alt="Vinwear logo" class="vinwear">
     <h3>Vinwear...Redefine Your Style</h3>
@@ -266,9 +300,10 @@ tbody tr:hover {
             <img src="jogger.jpg" alt="" class="jogger">
         </marquee>
     </div>
-    <div class="all">
-    <button class="order">ORDER ALL</button>
+    <div class="order-button-container">
+        <button class="order">ORDER ALL</button>
     </div>
+
     <h1>OUR PRICETAGS</h1>
     <table border="1">
         <thead>
@@ -308,7 +343,19 @@ tbody tr:hover {
     </section>
     <section id="contact">
         <footer>
-    <h1 style="text-align: center; color: rgb(0, 0, 0);">CONTACT US</h1>
+            <h1 style="text-align: center; color: rgb(0, 0, 0);">CONTACT US</h1>
+            <div class="contact-info">
+        <p><strong>Email:</strong> irvin@vinwear.com</p>
+        <p><strong>Phone/WhatsApp:</strong> +234 915 102 5337</p>
+        <p><strong>Location:</strong>14B Peace Avenue, Ikeja, Lagos, Nigeria</p>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/?hl=en" style="color: white; margin: 0 15px; font-size: 1.5em;">Instagram</a>
+            <a href="https://x.com/" style="color: white; margin: 0 15px; font-size: 1.5em;">Twitter</a>
+            <a href="https://www.tiktok.com/en/" style="color: white; margin: 0 15px; font-size: 1.5em;">TikTok</a>
+        </div>
+    </div>
+
     <form style="max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
         <input type="text" placeholder="Your Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid rgb(113, 61, 2); border-radius: 8px;"><br>
         <input type="email" placeholder="Your Email" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid rgb(113, 61, 2); border-radius: 8px;"><br>
@@ -316,7 +363,6 @@ tbody tr:hover {
         <button type="submit" class="order" style="width: 100%;">Send Message</button>
     </form>
     <p>All Rights reserved | @ 2025 Vinwear</p>
-    </section>
         </footer>
     </section>
 </body>
