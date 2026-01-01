@@ -1,0 +1,427 @@
+/* styles.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(246, 246, 235);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+body.dark-mode .vin h1{
+    color: white;
+}
+
+.home1 {
+    background-color: rgb(220, 109, 58);
+    padding: 1px;
+}
+
+.both {
+    display: flex;
+    gap: 460px;
+    justify-content: center;
+    align-items: center;
+}
+
+.vin {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+
+.theme-button{
+    margin-right: 10px;
+}
+
+.wear {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+
+body.dark-mode h1 {
+    color: rgb(220, 109, 58);
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    background-color: rgb(149, 77, 44);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 6px;
+    border: 3px solid rgb(80, 44, 2);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    background-color: rgb(113, 61, 37);
+    color: white;
+}
+
+.theme-button {
+    background: rgb(220, 109, 58);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add p {
+    font-weight: bold;
+}
+
+.jeans {
+    width: 600px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid rgb(113, 61, 2);
+    border-radius: 12px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.view {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+button, .navbar a {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.order-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.order {
+    background: rgb(220, 109, 58);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.order:hover {
+    background: rgb(180, 80, 30);
+    transform: translateY(-3px);
+}
+
+.shop { background: rgb(220, 109, 58); border: none; }
+.shop:hover { background: rgb(180, 80, 30); transform: translateY(-3px); }
+.collections { background: white; color: rgb(220, 109, 58); border: 2px solid rgb(220, 109, 58); }
+.collections:hover { background: rgb(220, 109, 58); color: white; }
+
+.vinwear {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.second h3 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+body.dark-mode .second h3 {
+    color: white;
+}
+
+.home2 {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 1px;
+}
+
+.home2 h3 {
+    color: white;
+}
+
+.home2 h1 {
+    color: rgb(220, 109, 58);
+}
+
+.redefine {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+body.dark-mode .redefine {
+    color: white;
+}
+
+.culture {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.woman {
+    width: 400px;
+    height: 300px;
+    border-radius: 12px;
+    border: 3px solid rgb(113, 61, 2);
+}
+
+body.dark-mode .brand {
+    color: rgb(220, 109, 58);
+}
+
+.carousel-container {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(113, 61, 2);
+    border-radius: 12px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+table {
+    width: 90%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+body.dark-mode table {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgb(220, 109, 58);
+}
+
+thead {
+    background-color: rgb(220, 109, 58);
+    color: white;
+    font-size: 1.2em;
+}
+
+tbody tr:hover {
+    background-color: rgb(246, 246, 235);
+}
+
+body.dark-mode tbody tr:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+.one {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgb(113, 61, 2);
+}
+
+footer {
+    background-color: rgb(220, 109, 58);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer h1 {
+    color: rgb(0, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid rgb(113, 61, 2);
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.social-links a {
+    color: rgb(220, 109, 58);
+    margin: 0 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+body.dark-mode form {
+    background: rgb(40, 40, 40);
+}
+
+body.dark-mode footer h1{
+    color: white;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(113, 61, 2);
+    border-radius: 8px;
+    background: inherit;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .both {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .culture {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .jeans, .woman {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 20px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid rgb(220, 109, 58);
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        font-weight: bold;
+    }
+}
